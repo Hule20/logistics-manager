@@ -1,3 +1,3 @@
 # logistics-manager
 
-This is a finals project for a Java course on college 
+This is my finals project for a Java course on college 
