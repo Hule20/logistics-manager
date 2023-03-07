@@ -1,0 +1,21 @@
+.buttonMenu {
+    -fx-background-color: #3A435E;
+    -fx-font-size: 20px;
+}
+
+.buttonMenu:hover {
+    -fx-background-color: #5c6672;
+}
+
+.vboxMenu {
+    -fx-background-color: #3A435E;
+}
+
+.entityBtns {
+    -fx-background-color: #A1B0C2;
+    -fx-border-style: none;
+}
+
+.entityBtns:hover {
+    -fx-background-color: #5c6672;
+}
