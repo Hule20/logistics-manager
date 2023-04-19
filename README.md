@@ -8,8 +8,6 @@ This application is intended for transportation companies to track their resourc
 
 ## Main features you could reuse in your project:
 
-<ul>
-  <li>[Project OSRM API](http://project-osrm.org/docs/v5.5.1/api/#general-options) integration</li>
-  <li>[Gluon Maps](https://github.com/gluonhq/maps) implementation</li>
-  <li>UI built using JavaFX</li>
-</ul>
+- [Project OSRM API](http://project-osrm.org/docs/v5.5.1/api/#general-options) integration
+- [Gluon Maps](https://github.com/gluonhq/maps) implementation
+- UI built using JavaFX
