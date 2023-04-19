@@ -3,7 +3,6 @@ package com.karlohusak.logisticsmanager.entities;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-//T entityBefore, T entityAfter, String role, LocalDateTime changeTime
 public class SerializedObject<T> implements Serializable {
     private static final long serialVersionUID = 1234567L;
     T objBefore;

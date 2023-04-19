@@ -32,7 +32,7 @@ public class LoginController {
         String enteredPassword = password.getText();
 
         if(enteredUsername.isEmpty() || enteredPassword.isEmpty()){
-            System.out.println("Empty username or pass");
+            System.out.println("Empty username or password");
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Neuspješna prijava!");

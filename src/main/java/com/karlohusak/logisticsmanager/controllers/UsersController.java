@@ -12,11 +12,8 @@ public class UsersController {
 
     List<SerializedObject> deserObj = new ArrayList<>();
 
-
     @FXML
     private void initialize() throws FileNotFoundException {
         deserObj = SerializationHelper.deserializeData();
-
-        //deserObj.forEach(System.out::println);
     }
 }

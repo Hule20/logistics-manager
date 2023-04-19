@@ -38,8 +38,6 @@ public class LoginHelper {
                 throw new RuntimeException(e);
             }
 
-        System.out.println("Contains true: " + lineFound);
-
         MessageDigest md = MessageDigest.getInstance("MD5");
 
         md.update(enteredPassword.getBytes());

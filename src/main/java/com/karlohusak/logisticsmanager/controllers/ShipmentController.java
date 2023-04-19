@@ -37,8 +37,6 @@ public class ShipmentController {
     final static Double DARUVAR_LAT = 45.59056;
     final static Double DARUVAR_LON = 17.225;
 
-    List<String> addressList = new ArrayList<>();
-
     MultipleSelectionModel<Shipment> shipment;
 
     protected MultipleSelectionModel<Shipment> getShipmentSelection() {
@@ -173,7 +171,7 @@ public class ShipmentController {
         thread.start();
 
         try {
-            Thread.sleep(1100);
+            Thread.sleep(1010);
             thread.join();
         } catch (InterruptedException e) {
             logger.error("Došlo je do pogreške sa niti!", e);
@@ -191,7 +189,7 @@ public class ShipmentController {
         thread = new Thread(getCoordinatesEnd);
         thread.start();
         try {
-            Thread.sleep(1100);
+            Thread.sleep(1010);
             thread.join();
         } catch (InterruptedException e) {
             logger.error("Došlo je do pogreške sa niti!", e);
@@ -201,13 +199,15 @@ public class ShipmentController {
         String endCrd = getCoordinatesEnd.getCoordinate();
 
         List<MapPoint> polPoints = MapsHelper
-                .getPathCoordinates(startCrd,
-                        endCrd);
+                .getPathCoordinates(startCrd, endCrd);
+
+        mapview.setCenter(polPoints.get(polPoints.size()/2));
 
         RouteLayer poi = new RouteLayer();
         for (MapPoint mapPoint : polPoints) {
             poi.addPoint(mapPoint, new Circle(5, Color.BLUE));
         }
+
         return poi;
     }
 }
